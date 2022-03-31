@@ -1,59 +1,24 @@
-import { Link } from "react-router-dom";
+import Brands from "./Brands";
+
 export const brands = [
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
-  {
-    title: "Lorem",
-  },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
+  { title: "Lorem" },
 ];
 const BrandList = () => {
   return (
@@ -64,48 +29,24 @@ const BrandList = () => {
           <div className="brands-agile">
             {brands
               .filter((item, index) => index < 6)
-              .map((items) => {
-                return (
-                  <div className="col-md-2 w3layouts-brand">
-                    <div className="brands-w3l">
-                      <p>
-                        <Link to="#">{items.title}</Link>
-                      </p>
-                    </div>
-                  </div>
-                );
+              .map((items, index) => {
+                return <Brands key={index} {...items} />;
               })}
           </div>
           <div className="clearfix"></div>
           <div className="brands-agile-1">
             {brands
               .filter((item, index) => index >= 6 && index < 12)
-              .map((items) => {
-                return (
-                  <div className="col-md-2 w3layouts-brand">
-                    <div className="brands-w3l">
-                      <p>
-                        <Link to="#">{items.title}</Link>
-                      </p>
-                    </div>
-                  </div>
-                );
+              .map((items, index) => {
+                return <Brands key={index} {...items} />;
               })}
           </div>
           <div className="clearfix"></div>
           <div className="brands-agile-1">
             {brands
               .filter((item, index) => index >= 12 && index < 18)
-              .map((items) => {
-                return (
-                  <div className="col-md-2 w3layouts-brand">
-                    <div className="brands-w3l">
-                      <p>
-                        <Link to="#">{items.title}</Link>
-                      </p>
-                    </div>
-                  </div>
-                );
+              .map((items, index) => {
+                return <Brands key={index} {...items} />;
               })}
           </div>
           <div className="clearfix"></div>

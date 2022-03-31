@@ -6,7 +6,7 @@ const sliderDesc = [
   { src: "44.jpg", des: "Whole Spices Products Are Now On Line With Us" },
 ];
 
-const ImgSlider = () => {
+const Slider = () => {
   return (
     <>
       <ul id="demo1">
@@ -18,4 +18,4 @@ const ImgSlider = () => {
   );
 };
 
-export default ImgSlider;
+export default Slider;
