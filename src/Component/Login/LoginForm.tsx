@@ -2,15 +2,18 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
+  let navigate = useNavigate();
+
   const client_id = 2;
   const client_secret = "olzBb6we0po4B0PSJyDpNGhhSsnvZmeio8sRoASa";
   const grant_type = "password";
   const [username, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const postRequestHandler = async (e: any) => {
+  const SubmitForm = async (e: any) => {
     e.preventDefault();
     const data = {
       client_id,
@@ -19,17 +22,19 @@ const LoginForm = () => {
       username,
       password,
     };
-    console.log(data);
+    // console.log(data);
 
     const response = await axios.post(
       "https://uat.ordering-dalle.ekbana.net/api/v4/auth/login",
       data
     );
-
-    console.log(response);
-    console.log(response.status);
+    if (response.status === 200) {
+      alert("Login Successful");
+      navigate("/");
+    } else {
+      alert(response.data);
+    }
   };
-
   return (
     <div>
       <div className="login">
@@ -63,7 +68,7 @@ const LoginForm = () => {
               <input
                 type="submit"
                 value="Login"
-                onClick={(e) => postRequestHandler(e)}
+                onClick={(e) => SubmitForm(e)}
               />
             </form>
           </div>
