@@ -2,39 +2,39 @@ import AllProducts from "../Products_Main/AllProductsProps";
 
 const advertisedOffers = [
   {
-    title: "Ad Offer this week",
+    title: "Offer 1",
     discountedPrice: 35.99,
-    initialPrice: 43.32,
+    initialPrice: 65.99,
     image: "1.png",
   },
   {
-    title: "Ad Offer this week",
+    title: "Offer 2",
     discountedPrice: 35.99,
-    initialPrice: 43.32,
+    initialPrice: 65.99,
     image: "2.png",
   },
   {
-    title: "Ad Offer this week",
+    title: "Offer 3",
     discountedPrice: 35.99,
-    initialPrice: 43.32,
+    initialPrice: 65.99,
     image: "3.png",
   },
   {
-    title: "Ad Offer this week",
+    title: "Offer 4",
     discountedPrice: 35.99,
-    initialPrice: 43.32,
+    initialPrice: 65.99,
     image: "4.png",
   },
   {
-    title: "Ad Offer this week",
+    title: "Offer 5",
     discountedPrice: 35.99,
-    initialPrice: 43.32,
+    initialPrice: 65.99,
     image: "5.png",
   },
   {
-    title: "Ad Offer this week",
+    title: "Offer 6",
     discountedPrice: 35.99,
-    initialPrice: 43.32,
+    initialPrice: 65.99,
     image: "6.png",
   },
 ];

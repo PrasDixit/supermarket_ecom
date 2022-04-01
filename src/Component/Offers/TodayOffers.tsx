@@ -2,37 +2,37 @@ import AllProducts from "../Products_Main/AllProductsProps";
 
 const todayOffers = [
   {
-    title: "Todays offer",
+    title: "Offer 1",
     discountedPrice: 35.99,
     initialPrice: 45.99,
     image: "7.png",
   },
   {
-    title: "Todays offer",
+    title: "Offer 2",
     discountedPrice: 25.99,
     initialPrice: 29.99,
     image: "8.png",
   },
   {
-    title: "Todays offer",
+    title: "Offer 3",
     discountedPrice: 35.99,
     initialPrice: 60.5,
     image: "9.png",
   },
   {
-    title: "Todays offer",
+    title: "Offer 4",
     discountedPrice: 65.99,
     initialPrice: 85.99,
     image: "10.png",
   },
   {
-    title: "Todays offer",
+    title: "Offer 5",
     discountedPrice: 85.99,
     initialPrice: 90.0,
     image: "12.png",
   },
   {
-    title: "Todays offer",
+    title: "Offer 6",
     discountedPrice: 55.99,
     initialPrice: 65.99,
     image: "13.png",
