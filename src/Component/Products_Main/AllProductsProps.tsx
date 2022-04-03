@@ -1,25 +1,30 @@
 import { Link } from "react-router-dom";
 
-const imagePath = "../../../assets/images/";
+type productProps = {
+  offer: boolean;
+  image: string;
+  title: string;
+  images: any[];
+  unitPrice: any[];
+  markedPrice: number;
+  sellPrice: number;
+};
 
-const AllProducts = (props: any) => {
+const AllProducts = (props: productProps) => {
   return (
-    <>
+    <div>
       <div className="hover14 column">
         <div className="agile_top_brand_left_grid">
-          <div className="agile_top_brand_left_grid_pos">
-            <img
-              src={imagePath + "offer.png"}
-              alt=" "
-              className="img-responsive"
-            />
-          </div>
           <div className="agile_top_brand_left_grid1">
             <figure>
               <div className="snipcart-item block">
                 <div className="snipcart-thumb">
                   <Link to="/products">
-                    <img title=" " alt=" " src={imagePath + props.image} />
+                    <img
+                      title={props.title}
+                      alt=""
+                      src={props.images[0].imageName}
+                    />
                   </Link>
                   <p>{props.title}</p>
                   <div className="stars">
@@ -30,7 +35,8 @@ const AllProducts = (props: any) => {
                     <i className="fa fa-star gray-star" aria-hidden="true"></i>
                   </div>
                   <h4>
-                    ${props.discountedPrice} <span>${props.initialPrice}</span>
+                    Rs. {props.unitPrice[0].sellingPrice}{" "}
+                    {/* <span>${props.unitPrice[0].markedPrice}</span> */}
                   </h4>
                 </div>
                 <div className="snipcart-details top_brand_home_details">
@@ -67,7 +73,7 @@ const AllProducts = (props: any) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default AllProducts;
