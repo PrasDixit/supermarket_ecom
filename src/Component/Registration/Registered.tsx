@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 import { FC, useState } from "react";
 
 const Registered: FC = () => {
+  let navigate = useNavigate();
+
   const [last_name, setLastName] = useState<string>("");
   const [first_name, setFirstName] = useState<string>("");
 
@@ -28,12 +31,11 @@ const Registered: FC = () => {
     );
     if (response.status === 200 || response.status === 201) {
       alert("Registration successful");
-      console.log("Response:", response.data);
-      console.log("Response Code:", response.status);
+      navigate("/Login");
     } else {
+      e.preventDefault();
       console.log("Response:", response.data);
       console.log("Response Code:", response.status);
-      e.preventDefault();
     }
   };
 
