@@ -23,16 +23,16 @@ const LoginForm = () => {
       password,
     };
     // console.log(data);
-
-    const response = await axios.post(
-      "https://uat.ordering-dalle.ekbana.net/api/v4/auth/login",
-      data
-    );
-    if (response.status === 200) {
-      alert("Login Successful");
+    try {
+      const response = await axios.post(
+        "https://uat.ordering-dalle.ekbana.net/api/v4/auth/login",
+        data
+      );
+      alert("Successfull Login");
+      console.log(response);
       navigate("/");
-    } else {
-      alert(response.data);
+    } catch (err) {
+      alert("Invalid Login Credentials");
     }
   };
   return (
