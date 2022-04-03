@@ -6,7 +6,7 @@ import Register from "./Pages/Register/Register";
 import Login from "./Pages/Login/Login";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-// import Offers from "./Pages/Offers/Offers";
+import ForgotPassword from "./Component/ForgotPassword/ForgotPassword";
 import Footer from "./Component/Footer/Footer";
 import Error from "./Pages/Error";
 
@@ -22,7 +22,8 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<About />} />
-            {/* <Route path="/Offers" element={<Offers />} /> */}
+            <Route path="/ForgotPassword" element={<ForgotPassword />} />
+
             <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
