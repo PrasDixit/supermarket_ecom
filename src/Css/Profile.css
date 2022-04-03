@@ -1,0 +1,21 @@
+.profile-info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333;
+  margin: 40px;
+}
+
+.profile-info label {
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.profile-info span {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.profile-pic {
+  width: 10%;
+}
