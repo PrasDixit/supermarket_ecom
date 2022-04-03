@@ -17,6 +17,7 @@ const Registered: FC = () => {
   const [mobile_number, setMobileNumber] = useState<number>();
 
   const postRequestHandler = async (e: any) => {
+    e.preventDefault();
     const data = {
       last_name,
       email,
@@ -33,7 +34,6 @@ const Registered: FC = () => {
       alert("Registration successful");
       navigate("/Login");
     } else {
-      e.preventDefault();
       console.log("Response:", response.data);
       console.log("Response Code:", response.status);
     }
