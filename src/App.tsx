@@ -7,6 +7,8 @@ import Login from "./Pages/Login/Login";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import ForgotPassword from "./Component/ForgotPassword/ForgotPassword";
+import Profile from "./Pages/Profile/Profile";
+import FAQ from "./Pages/FAQ/FAQ";
 import Footer from "./Component/Footer/Footer";
 import Error from "./Pages/Error";
 
@@ -22,8 +24,9 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<About />} />
+            <Route path="/Profile" element={<Profile />} />
             <Route path="/ForgotPassword" element={<ForgotPassword />} />
-
+            <Route path="/FAQ" element={<FAQ />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
