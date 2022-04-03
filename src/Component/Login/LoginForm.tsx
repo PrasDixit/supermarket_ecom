@@ -30,7 +30,7 @@ const LoginForm = () => {
       );
       alert("Successfull Login");
       console.log(response);
-      navigate("/");
+      navigate("/Profile");
     } catch (err) {
       alert("Invalid Login Credentials");
     }
