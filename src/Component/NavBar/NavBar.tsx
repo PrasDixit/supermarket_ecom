@@ -57,12 +57,11 @@ const NavBar = () => {
                 {categories &&
                   categories.map((category: any) => {
                     return category.subcategories.data === [] ? (
-                      <li className="dropdown">
+                      <li className="dropdown" key={`${category.title}`}>
                         <Link
                           to="#"
                           className="dropdown-toggle"
                           data-toggle="dropdown"
-                          key={`${category.title}`}
                         >
                           {category.title}
                           <b className="caret"></b>
@@ -71,16 +70,12 @@ const NavBar = () => {
                           <div className="row">
                             <div className="multi-gd-img">
                               <ul className="multi-column-dropdown">
-                                <h6 key={`${category.title}`}>
-                                  {category.title}
-                                </h6>
+                                <h6>{category.title}</h6>
                                 {category.subcategories.data.map(
                                   (subCat: any) => {
                                     return (
-                                      <li>
-                                        <Link to="/" key={`${subCat.title}`}>
-                                          {subCat.title}
-                                        </Link>
+                                      <li key={`${subCat.title}`}>
+                                        <Link to="/">{subCat.title}</Link>
                                       </li>
                                     );
                                   }
@@ -92,7 +87,11 @@ const NavBar = () => {
                       </li>
                     ) : (
                       <li key={`${category.title}`}>
-                        <Link to={`/${category.title.toLowerCase()}`}>
+                        <Link
+                          to={`/${category.title
+                            .replace(/ /g, "")
+                            .toLowerCase()}`}
+                        >
                           {category.title}
                         </Link>
                       </li>
