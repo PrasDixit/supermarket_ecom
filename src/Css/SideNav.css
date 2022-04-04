@@ -1,0 +1,48 @@
+.sidenavcontainer {
+  border: 1px solid #000;
+  height: 50vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.sidebar-header {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.sidebar-content {
+  color: #898989;
+  text-decoration: none;
+  font-family: "Raleway Bold";
+  font-size: 14px;
+  padding-bottom: 10px;
+  transition: all 1s ease;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.sidebar-content:hover {
+  color: #3399cc;
+}
+
+.sidebar-content {
+  padding-left: 50px;
+}
+
+.sidebar-list-item {
+  margin-bottom: 14px;
+}
+
+.arrow-icon {
+  padding-right: 5px;
+}
+
+.col-md-4 {
+  margin-bottom: 20px;
+}

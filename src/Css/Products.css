@@ -1,0 +1,33 @@
+.products-img {
+  max-width: 100%;
+}
+
+.product-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+}
+
+.prod-page {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Q */
+
+@media (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-container {
+    grid-template-columns: 1fr;
+  }
+}
