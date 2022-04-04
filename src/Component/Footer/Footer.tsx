@@ -62,23 +62,23 @@ const Footer = () => {
               <ul className="info">
                 <li>
                   <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  <Link to="/Groceries">Groceries</Link>
+                  <Link to="/Groceries">Snacks</Link>
                 </li>
                 <li>
                   <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  <Link to="/Household">Household</Link>
+                  <Link to="/Household">Signatures</Link>
                 </li>
                 <li>
                   <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  <Link to="/PersonalCare">Personal Care</Link>
+                  <Link to="/PersonalCare">Momo</Link>
                 </li>
                 <li>
                   <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  <Link to="/PackagedFoods">Packaged Foods</Link>
+                  <Link to="/PackagedFoods">Rice and Noodles</Link>
                 </li>
                 <li>
                   <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  <Link to="/Beverages">Beverages</Link>
+                  <Link to="/Beverages">Frozen Items</Link>
                 </li>
               </ul>
             </div>
