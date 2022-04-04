@@ -17,6 +17,7 @@ import RiceandNoodles from "./Pages/Products/RiceandNoodles";
 import FrozenItems from "./Pages/Products/FrozenItems";
 import Footer from "./Component/Footer/Footer";
 import Error from "./Pages/Error";
+import Momo from "./Pages/Products/Momo";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <Route path="/Products" element={<Products />} />
             <Route path="/snacks" element={<Snacks />} />
             <Route path="/dallemomos" element={<DalleMomos />} />
-            <Route path="/momo" element={<DalleMomos />} />
+            <Route path="/momo" element={<Momo />} />
             <Route path="/riceandnoodles" element={<RiceandNoodles />} />
             <Route path="/frozenitems" element={<FrozenItems />} />
             <Route path="/ForgotPassword" element={<ForgotPassword />} />
