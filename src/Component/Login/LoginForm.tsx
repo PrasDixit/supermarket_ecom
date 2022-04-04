@@ -28,9 +28,11 @@ const LoginForm = () => {
         "https://uat.ordering-dalle.ekbana.net/api/v4/auth/login",
         data
       );
-      alert("Successfull Login");
-      console.log(response);
-      navigate("/Profile");
+      if (response.status === 200 || response.status === 201) {
+        alert("Successfull Login");
+        console.log(response);
+        navigate("/");
+      }
     } catch (err) {
       alert("Invalid Login Credentials");
     }
