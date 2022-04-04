@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 
-const Pagination = () => {
+const Pagination = ({ postsPerPage, totalPosts, paginate }: any) => {
+  const pageNumbers = [];
+
+  for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
+    console.log(totalPosts, postsPerPage);
+    pageNumbers.push(i);
+    console.log(pageNumbers);
+  }
   return (
     <nav className="numbering">
       <ul className="pagination paging">
@@ -9,23 +16,19 @@ const Pagination = () => {
             <span aria-hidden="true">&laquo;</span>
           </Link>
         </li>
-        <li className="active">
-          <Link to="#">
-            1<span className="sr-only">(current)</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="#">2</Link>
-        </li>
-        <li>
-          <Link to="#">3</Link>
-        </li>
-        <li>
-          <Link to="#">4</Link>
-        </li>
-        <li>
-          <Link to="#">5</Link>
-        </li>
+        {pageNumbers.map((number) => {
+          return (
+            <li key={number}>
+              <Link
+                to="#"
+                onClick={() => paginate(number)}
+                className="page-link"
+              >
+                {number}
+              </Link>
+            </li>
+          );
+        })}
         <li>
           <Link to="#" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
@@ -35,4 +38,5 @@ const Pagination = () => {
     </nav>
   );
 };
+
 export default Pagination;
