@@ -21,7 +21,6 @@ const BannerBotm = () => {
 
       const response = await axios.get(`${baseURL}api/v4/config`, config);
       setBannerBotm(response.data.data.userGroup);
-      console.log(response.data.data);
     } catch (error) {
       console.log(error);
     }
@@ -33,7 +32,7 @@ const BannerBotm = () => {
           <div className="col-md-6 ban-bottom3">
             <div className="ban-top">
               <img
-                src={bannerBotm[0].image}
+                // src={(bannerBotm[0] || []).image}
                 className="img-responsive banner-img"
                 alt=""
               />
@@ -42,7 +41,7 @@ const BannerBotm = () => {
           <div className="col-md-6 ban-bottom">
             <div className="ban-top">
               <img
-                src={bannerBotm[4].image}
+                // src={(bannerBotm[4] || []).image}
                 className="img-responsive banner-img"
                 alt=""
               />
@@ -51,7 +50,7 @@ const BannerBotm = () => {
           <div className="col-md-6 ban-bottom">
             <div className="ban-top">
               <img
-                src={bannerBotm[2].image}
+                // src={(bannerBotm[2] || []).image}
                 className="img-responsive banner-img"
                 alt=""
               />
@@ -60,7 +59,7 @@ const BannerBotm = () => {
           <div className="col-md-6 ban-bottom">
             <div className="ban-top">
               <img
-                src={bannerBotm[1].image}
+                // src={(bannerBotm[1] || []).image}
                 className="img-responsive banner-img"
                 alt=""
               />
