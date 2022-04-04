@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container">
           <div className="w3l_offers">
             <p>
-              Welcome you to Dalle Momo. <Link to="/products">SHOP NOW</Link>
+              Welcome you to Dalle Momo. <Link to="/Products">ORDER NOW</Link>
             </p>
           </div>
           <div className="agile-login">

@@ -7,7 +7,7 @@ const BannerBotm = () => {
   const apiKey = "q0eq7VRCxJBEW6n1EJkHy4qNLgaS86ztm8DYhGMqerV1eldXa6";
   const warehouseId = "1";
 
-  const [bannerBotm, setBannerBotm] = useState<any>();
+  const [setBannerBotm] = useState<any>();
 
   useEffect(() => {
     getBannerBotm();
