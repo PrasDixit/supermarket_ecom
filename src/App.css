@@ -34,6 +34,20 @@
   font-size: 54px;
 }
 
+.navbar a {
+  color: #fff !important;
+}
+
+div .navigation-agileits,
+button.btn.btn-default.search {
+  background-color: tomato;
+}
+
+.w3ls_logo_products_left h1 a,
+.w3l_offers p a {
+  color: tomato;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
