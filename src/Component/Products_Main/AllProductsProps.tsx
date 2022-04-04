@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../../Css/Products.css";
 
 type productProps = {
   offer: boolean;
@@ -19,11 +20,12 @@ const AllProducts = (props: productProps) => {
             <figure>
               <div className="snipcart-item block">
                 <div className="snipcart-thumb">
-                  <Link to="/products">
+                  <Link to="/Products">
                     <img
                       title={props.title}
                       alt=""
                       src={props.images[0].imageName}
+                      className="products-img"
                     />
                   </Link>
                   <p>{props.title}</p>
