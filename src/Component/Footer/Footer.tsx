@@ -45,10 +45,6 @@ const Footer = () => {
                 </li>
                 <li>
                   <i className="fa fa-arrow-right" aria-hidden="true"></i>
-                  <Link to="/ShortCodes">Short Codes</Link>
-                </li>
-                <li>
-                  <i className="fa fa-arrow-right" aria-hidden="true"></i>
                   <Link to="/FAQ">FAQ's</Link>
                 </li>
                 <li>
