@@ -38,7 +38,6 @@ const ProductDisplay = () => {
     indexOfFirstPost,
     indexOfLastPost
   );
-  console.log(postsPerPage, currentPosts);
 
   const paginate = (pageNumber: any) => {
     setCurrentPage(pageNumber);
